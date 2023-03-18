@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Главная</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="headerWrapper">
+      <a href="#">
+        <img src="img/logo_app.svg" alt="logo" class="logo_icon">
+      </a>
+      <div class="navWrapper">
+        <nav class="navigation">
+          <a href="#" class="navigation__element">Преимущества</a>
+          <a href="#" class="navigation__element">Отзывы</a>
+          <a href="#" class="navigation__element">Техподдержка</a>
+          <a href="#" class="navigation__element">Контакты</a>
+        </nav>
+        <div class="account_options">
+          <button class="account_options__btn">Авторизация</button>
+          <button class="account_options__btn" id="openModal_Registration">Регистрация</button>
+        </div>
+      </div>
+
+      <div class="headerBurger" id="mobileMenu">
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="ModalWindow">
+    <div class="ModalWindowContainer">
+      <div class="ModalWindowBody">
+
+      </div>
+    </div>
+  </div>
+  <div class="modalWindowRegistrationWrapper" id="modalWindowRegistrationWrapper">
+    <div class="modalMask"></div>
+    <div class="modalWindowRegistration">
+      <button class="crossForClose" id="crossForClose">X</button>
+      <div class="modalWindowRegContent">
+        <h1 class="modalWindowRegContent__title">Регистрация</h1>
+        <div class="modalWindowRegContent__form">
+          <h2 class="modalWindowRegContent__titleForm">Наименование организации</h2>
+          <input type="text" placeholder="Введите корректно вашу организацию" class="modalWindowRegContent__field">
+        </div>
+        <div class="modalWindowRegContent__form">
+          <h2 class="modalWindowRegContent__titleForm">Логин</h2>
+          <input type="text" placeholder="Придумайте логин" class="modalWindowRegContent__field">
+        </div>
+        <div class="modalWindowRegContent__form">
+          <h2 class="modalWindowRegContent__titleForm">Почта</h2>
+          <input type="text" placeholder="Введите вашу личную почту" class="modalWindowRegContent__field">
+        </div>
+        <div class="modalWindowRegContent__form">
+          <h2 class="modalWindowRegContent__titleForm">Пароль</h2>
+          <input type="password" class="modalWindowRegContent__field">
+        </div>
+        <div class="modalWindowRegContent__form">
+          <h2 class="modalWindowRegContent__titleForm">Подтверждение пароля</h2>
+          <input type="password" class="modalWindowRegContent__field">
+        </div>
+        <div class="modalWindowRegContent__form">
+          <h2 class="modalWindowRegContent__titleForm">Ключ доступа</h2>
+          <input type="text" placeholder="Ключ доступа, который был выслан на почту организации" class="modalWindowRegContent__field">
+        </div>
+        <button class="modalWindowRegContent__btn">Регистрация</button>
+      </div>
+    </div>
+  </div>
+  <main>
+
+  </main>
+  <footer>
+    <div class="footerWrapper">
+      <img src="img/logo_app.svg" alt="logo" class="logo_icon hide">
+      <div class="socialMedias">
+        <h2 class="socialMedias__title hide">Социальные сети</h2>
+        <div class="socialMedias__icons">
+          <a href="#" class="socialMedias__link">
+            <img src="img/vk_icon.svg" alt="vk icon" class="socialMedias__icon">
+          </a>
+          <a href="#" class="socialMedias__link">
+            <img src="img/telegram_icon.svg" alt="telegram icon" class="socialMedias__icon">
+          </a>
+          <a href="#" class="socialMedias__link">
+            <img src="img/mailru_icon.svg" alt="mailru icon" class="socialMedias__icon">
+          </a>
+        </div>
+      </div>
+      <div class="mobileАssociationForNav">
+        <img src="img/logo_app.svg" alt="logo" class="logo_icon hide">
+        <div class="aboutUs">
+          <h2 class="aboutUs__title">О нас</h2>
+          <ul class="aboutUs__list">
+            <a href="#" class="aboutUs__link">Отзывы</a>
+            <a href="#" class="aboutUs__link">Преимущества</a>
+          </ul>
+        </div>
+        <div class="contacts">
+          <h2 class="contacts__title">Связь с нами</h2>
+          <ul class="contacts__list">
+            <a href="#" class="contacts__link">Техподдержка</a>
+            <a href="#" class="contacts__link">Телеграм-чат</a>
+          </ul>
+        </div>
+      </div>
+      <div class="aboutUs hide">
+        <h2 class="aboutUs__title">О нас</h2>
+        <ul class="aboutUs__list">
+          <a href="#" class="aboutUs__link">Отзывы</a>
+          <a href="#" class="aboutUs__link">Преимущества</a>
+        </ul>
+      </div>
+      <div class="contacts hide">
+        <h2 class="contacts__title">Связь с нами</h2>
+        <ul class="contacts__list">
+          <a href="#" class="contacts__link">Техподдержка</a>
+          <a href="#" class="contacts__link">Телеграм-чат</a>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">©️ 5gays, 2023</p>
+  </footer>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

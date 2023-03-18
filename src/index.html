@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    "title": "Главная"
+})
+    <body>
+      
+        @@include('html/header.html', {})
+       
+        <div class="ModalWindow">
+            <div class="ModalWindowContainer">
+                <div class="ModalWindowBody">
+
+                </div>
+            </div>
+        </div>
+        <div class="modalWindowRegistrationWrapper" id="modalWindowRegistrationWrapper">
+            <div class="modalMask"></div>
+            <div class="modalWindowRegistration">
+                <button class="crossForClose" id="crossForClose">X</button>
+                <div class="modalWindowRegContent">
+                    <h1 class="modalWindowRegContent__title">Регистрация</h1>
+                    <div class="modalWindowRegContent__form">
+                        <h2 class="modalWindowRegContent__titleForm">Наименование организации</h2>
+                        <input type="text" placeholder="Введите корректно вашу организацию" class="modalWindowRegContent__field">
+                    </div>
+                    <div class="modalWindowRegContent__form">
+                        <h2 class="modalWindowRegContent__titleForm">Логин</h2>
+                        <input type="text" placeholder="Придумайте логин" class="modalWindowRegContent__field">
+                    </div>
+                    <div class="modalWindowRegContent__form">
+                        <h2 class="modalWindowRegContent__titleForm">Почта</h2>
+                        <input type="text" placeholder="Введите вашу личную почту" class="modalWindowRegContent__field">
+                    </div>
+                    <div class="modalWindowRegContent__form">
+                        <h2 class="modalWindowRegContent__titleForm">Пароль</h2>
+                        <input type="password" class="modalWindowRegContent__field">
+                    </div>
+                    <div class="modalWindowRegContent__form">
+                        <h2 class="modalWindowRegContent__titleForm">Подтверждение пароля</h2>
+                        <input type="password" class="modalWindowRegContent__field">
+                    </div>
+                    <div class="modalWindowRegContent__form">
+                        <h2 class="modalWindowRegContent__titleForm">Ключ доступа</h2>
+                        <input type="text" placeholder="Ключ доступа, который был выслан на почту организации" class="modalWindowRegContent__field">
+                    </div>
+                    <button class="modalWindowRegContent__btn">Регистрация</button>
+                </div>
+            </div>
+        </div>
+        <main>
+
+        </main>
+        @@include('html/footer.html', {})
+        <script src="js/app.min.js"></script>
+    </body>
+</html>
